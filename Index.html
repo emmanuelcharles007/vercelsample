@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VDev - Your Website Builder!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Open+Sans:wght@300;400&family=Oswald:wght@200;300;400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Open+Sans:wght@300;400&family=Oswald:wght@200;300;400;500&family=Raleway:wght@300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!--Linking css files-->
+        <link rel="stylesheet" href="CSS-files/Index.css">
+        <link rel="stylesheet" href="CSS-files/Header-Footer/Header.css">
+        <link rel="stylesheet" href="CSS-files/Header-Footer/Footer.css">
+    </head>
+    <body>
+        <div id="preloader">
+            <img src="Images/Dev.gif">
+        </div> 
+        
+        <div class="Header">
+            <div class="other-pages-title">
+                <div class="TITLE">
+                    <img src="Images/Dev.jpg" class="titleimg" onclick="reDirectToHomePage()">
+                </div>
+                <div class="center-header">
+                <div class="Header-lists">
+                    <a href="#Home" class="LINK">Home</a>
+                </div>
+                <div class="Header-lists">
+                    <a href="#About-Me" class="LINK">About Me</a>
+                </div>
+                <div class="Header-lists">
+                    <a href="#services" class="LINK">Services</a>  
+                 </div>
+                <div class="Header-lists">
+                    <a href="#Work" class="LINK">Work</a>
+                </div>           
+                 <div class="Header-lists">
+                    <a href="Resume.pdf" class="LINK" target="_blank">Resume</a>  
+                 </div>
+            </div>
+                <div class="left-header">
+                    <button onclick="sayHi()">Say Hi!</button>
+                </div>
+            </div>
+        </div>
+        <div id="msb" onclick="msbhs()">
+            <img src="Images/menu.png" id="mimgs">
+            <div id="mobile-sidebar">
+                <a href="Index.html#Home">Home</a>
+                <a href="Index.html#About-Me">About Me</a>
+                <a href="Index.html#services">Services</a>
+                <a href="Index.html#Work">Work</a>
+                <a href="Resume.pdf">Resume</a>
+                <a href="Index.html#MESSAGE">Say Hi!</a>
+            </div>
+        </div>
+        <div class="duplicate" id="Home">1234</div>   
+        <div class="hero" id="Home">
+            <img src="Images/Designer.gif" onclick="reDirectToPage()" class="heroimg">
+            <p class="hero-subtitle">I Design, Code, Write Your Imaginations and I love what I do.</p>
+            <div class="logo">
+            <div class="circle"></div>
+            <div class="a12">
+                <img src="Images/myAvatar.png" class="avatar">
+                <img src="Images/Avatar.png" class="avatar2">
+            </div>    
+            </div>   
+            <div class="cimages">
+                <img src="Images/Entrance.gif" class="Cod1" class="static">
+                <img src="Images/Lopping.gif" class="Cod1" class="active">
+            </div>  
+        </div>
+        <div class="duplicate3" id="About-Me">123</div>
+        <div class="About-Me"> 
+            <h1 class="about-title">Hi I'm Venkatesh. Nice to meet you. </h1>
+            <p class="about-subtitle" >Hey there I'm Venkatesh a 15-year-old with a curious mind and
+                a passion for all things tech. My journey into the world of web development started
+                with a single click – and I was hooked. I find joy in turning lines of code into 
+                visually appealing and functional websites that leave a lasting impression. The challenge
+                of solving puzzles and bringing ideas to life on a digital canvas is what keeps me glued
+                to my <span id="services">screen.</span>
+            </p>
+        </div>
+
+        <div class="services">
+            <div class="services-grid">
+                <div class="c1">
+                    <div class="g1">
+                    <img src="Images/web-design.png" class="grid-img">
+                    <h2>Designing</h2>
+                    <div class="cs1">
+                        <p>I Design simple structures, amazing patterns and beautiful experiences!</p>
+                        <h3>My Area Of Expertise:</h3>
+                        <p>UI, UX, Web, Logos</p>
+                        <h3>Software I Use:</h3>
+                        <p class="sw"> Figma<br>
+                            Affinity Designer<br>
+                            Adobe Photoshop (For Logos)</p>
+                        <button onclick="design()" class="csb1"><a href="https://www.upwork.com/freelancers/~01b31d4403d8bc2267?s=1110580755493801984" target="_blank">Upwork Profile</a></button>
+                    </div>   
+                </div>
+            </div>
+                <div class="c2">
+                    <div class="g2">
+                    <img src="Images/Fdev.jpg" class="grid-img"> 
+                    <h2>Frontend Developer</h2>  
+                    <div class="cs1">
+                        <p>I code websites from blank canvas into attractive masterpieces!</p>
+                        <h3>My Area Of Expertise:</h3>
+                        <p>HTML, CSS, JAVASCRIPT, SCSS</p>
+                        <h3>Software I Use:</h3>
+                        <p class="sw">
+                            Github<br>
+                            React Js<br>
+                            Visual Studio Code<br>
+                        </p>
+                        <button onclick="fedev()" class="csb2"><a href="https://www.upwork.com/freelancers/~01b31d4403d8bc2267?s=1110580755057594368" target="_blank">Upwork Profile</a></button>
+                    </div>
+                </div>
+            </div>
+                <div class="c3">
+                <div class="g3">
+                    <img src="Images/writing.png" class="grid-img">
+                    <h2>Ghostwritting</h2>
+                    <div class="cs1">
+                        <p>I write NON-FICTIONAL books. I wrote 3 books and 2 for my clients!</p>
+                        <h3>Genre of Expertise:</h3>
+                        <p>Non-fictional, tutorial, Low-Content-Books</p>
+                        <h3>Software I use:</h3>
+                        <p class="sw">
+                            MS Word <br>
+                            Canva, Adobe (for covers)
+                        </p>
+                        <button onclick="ghost()" class="csb3"><a href="https://www.upwork.com/freelancers/~01b31d4403d8bc2267?s=1110580755493801984" target="_blank">Upwork Profile</a></button>
+                    </div>                        
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="duplicate2" id="Work">123</div>
+
+        <div class="portfolio">
+            <h1 class="portfolio-title">My Recent Work</h1>
+            <p class="portfolio-subtitle">Have a look at our past and ongoing projects!</p>
+                <div class="grid">
+                    <div class="grid1">
+                        <img class="gridimage" src="Images/book.png">
+                        <div class="overlaygrid">
+                            <div class="overlaygridtext">
+                                <span>The Trading Bible!</span>
+                                <p>The Trading Bible" is a comprehensive guide authored by myself that delves
+                                    into the fundamentals of trading. Geared towards beginners who may be encountering
+                                    losses in their trading endeavors, this book aims to provide essential knowledge
+                                    and insights to help them navigate the complex world of trading more successfully.</p>
+                                <a href="https://amzn.eu/d/ejQ9Jcq" target="_blank">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1">
+                        <img class="gridimage1" src="Images/trade.jpg">
+                        <div class="overlaygrid1">
+                            <div class="overlaygridtext">
+                                <span>Website</span>
+                                <p>The ongoing project of designing a website for marketing purposes
+                                    for the GPS Locator system is aimed at creating a compelling online platform
+                                    that effectively communicates the features, benefits, and functionalities of
+                                    the GPS Locator solution. The website will serve as a gateway for potential
+                                    clients and interested parties to learn about the system's capabilities and
+                                    advantages.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1">
+                        <img class="gridimage1" src="Images/Cse.jpg">
+                        <div class="overlaygrid2">
+                            <div class="overlaygridtext">
+                                <span>GPS Locator for school and colleges!</span>
+                                <p>The GPS Locator System is a sophisticated project designed to revolutionize
+                                    school bus transportation through advanced Global Positioning System (GPS) technology
+                                    and modern web development practices. The project aims to provide real-time tracking 
+                                    and monitoring of school buses to enhance safety, efficiency, and convenience for
+                                    parents, school authorities, and bus operators.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1">
+                        <img class="gridimage" src="Images/mastering.jpg">
+                        <div class="overlaygrid3">
+                            <div class="overlaygridtext">
+                                <span>Wealth Formula</span>
+                                <p>"Wealth Formula" is a comprehensive guide that unveils the time-tested
+                                    strategies and principles behind achieving financial success and building sustainable
+                                    wealth. Written by Emmanuel(by me but to a client) this book serves as a roadmap for individuals
+                                    seeking to improve their financial well-being and achieve their long-term goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        <div id="MESSAGE">1234</div>
+        <div class="form-content">
+            <h1>Get In Touch</h1>
+            <form action="https://formspree.io/f/xzblveyr" method="POST">
+                <input type="text" name="Name" placeholder="Name" class="inputs" required>
+                <input type="email" name="Email" placeholder="Gmail" class="inputs" required id="gmail">
+                <input type="text" name="Subject" placeholder="Subject/Topic" class="inputs" required id="subject">
+                <textarea class="inputs" placeholder="Message" rows="7" required id="body" name="Body"></textarea>
+                <button onclick="alertMessage()">Submit</button>
+            </form>
+            <div class="left-side-info">
+                <h1>Contact Us</h1>
+                <div class="Contactinglist">
+                    <div class="first-gridcl">
+                        <img src="Images/facebook.png" class="logocl">
+                        <p>Facebook: <a href="https://www.facebook.com/me/" class="acl">&#160;&#160;Venkatesh chockalingam</a></p>
+                    </div>
+                    <div class="first-gridcl">
+                        <img src="Images/linkedin.png" class="logocl">
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/venkatesh-chockalingam-489a91287/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BU%2BgG7NneShy9yUM1TAt0WA%3D%3D"class="acl">&#160;&#160;venkatesh-chockalingam</a></p>
+                    </div>
+                    <div class="first-gridcl">
+                        <img src="Images/dm.png" class="logocl">
+                        <p>Gmail: <a href="cv982007@gmail.com" class="acl">&#160;&#160;cv982007@gmail.com</a></p>
+                    </div>
+                    <div class="first-gridcl">
+                        <img src="Images/web.png" class="logocl">
+                        <p>Website: <a href="Home.html#Home" class="acl">&#160;&#160;Emmanuel.dev</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <div class="Footer">
+        <div class="footer-title">
+            <img src="Images/Vdev.jpg" onclick="reDirectToHomePage()">
+        </div>
+        <div class="footer-title-text">
+            <p>"The only way to do great work is to love what you do." <br><span>- Steve Jobs</span></p>
+        </div>
+
+        
+        <div class="socialmedia">
+            <div class="imgs">
+                <a href="https://twitter.com/Emmanuel8527" target="_blank"><img class="staticimg" src="Images/1.jpg"></a>
+                <a href="https://twitter.com/Emmanuel8527" target="_blank"><img class="hoverimg" src="Images/2.jpg"></a>   
+            </div>
+            <div class="imgs">
+                <a href="https://www.linkedin.com/in/venkatesh-chockalingam-489a91287/" target="_blank"><img class="staticimg" src="Images/4.jpg"></a>
+                <a href="https://www.linkedin.com/in/venkatesh-chockalingam-489a91287/" target="_blank"><img class="hoverimg" src="Images/3.jpg"></a>   
+            </div>
+            <div class="imgs">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><img class="staticimg" src="Images/6.jpg"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><img class="hoverimg" src="Images/5.jpg"></a>   
+            </div>
+            <div class="imgs">
+                <a href="https://dribbble.com/Venkatesh8527?onboarding=true" target="_blank"><img class="staticimg" src="Images/8.jpg"></a>
+                <a href="https://dribbble.com/Venkatesh8527?onboarding=true" target="_blank"><img class="hoverimg" src="Images/7.jpg"></a>   
+            </div>
+            <div class="imgs">
+                <a href="https://www.facebook.com/profile.php?id=100085611506160" target="_blank"><img class="staticimg" src="Images/9.jpg"></a>
+                <a href="https://www.facebook.com/profile.php?id=100085611506160" target="_blank"><img class="hoverimg" src="Images/10.jpg"></a>  
+            </div>
+                 
+        </div>
+    </div>  
+    </body>
+        
+    <script>
+        function reDirectToHomePage(){
+            window.location.href="Index.html"
+        }
+        function reDirectToPage(){
+            window.location.href="Index.html#services"
+        }
+        function services(){
+            window.location.href="ContactForm.html"
+        }
+        function sayHi(){
+            window.location.href="Index.html#MESSAGE"
+        }
+          
+        history.scrollRestoration = "manual";
+            $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
+
+        function msbhs() {
+            var sidebar = document.getElementById("mobile-sidebar");
+            
+            if (sidebar.style.display === "block" || sidebar.style.display === "") {
+                sidebar.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        if (performance.navigation.type === 1) {
+        // This is a page load (not a refresh)
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        });
+    }
+</script>
+</html>
+
+
+             
+
+

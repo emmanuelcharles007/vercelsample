@@ -1,0 +1,98 @@
+.Footer{
+    position: relative;
+    background-color: rgb(47, 15, 189);
+    height: 450px;
+    z-index: 10000;
+    width: 100%;
+}
+.footer-title{
+    position: absolute;
+    top: 50px;
+    left: 725px;
+}
+.footer-title img{
+    width: 150px;
+    cursor: pointer;
+}
+.footer-title-text p{
+    position: absolute;
+    top: 225px;
+    left: 500px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.footer-title-text span{
+    padding-left: 450px;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 310px;
+}
+.imgs img{
+    width: 55px;
+    padding: 10px 10px 10px 10px;
+}
+.staticimg{
+    transition:  0.5s ease-in-out;
+}
+.hoverimg{
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+.imgs:hover .hoverimg{
+    display: block;
+}
+
+
+@media (max-width: 480px) {
+    .Footer{
+        top: 3350px;
+        display: block;
+    }
+    .footer-title{
+        position: absolute;
+        top: 50px;
+        left: 110px;
+    }
+    .footer-title img{
+        width: 150px;
+        cursor: pointer;
+    }
+    .footer-title-text p{
+        position: absolute;
+        top: 225px;
+        left: 25px;
+        right: 25px;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+    }
+    .footer-title-text span{
+        padding-left: 75px;
+    }
+    .imgs img{
+        width: 50px;
+        padding: 6px 6px 6px 6px;
+    }
+    
+    
+}
+@media screen and (min-device-width: 1200px){
+
+    .Square-text{
+        position: absolute;
+        left: 125px;
+    }
+}
+@media screen and (min-device-width: 1600px){
+    .Square-text{
+        position: absolute;
+        left: 250px;
+    }
+}
+
